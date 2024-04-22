@@ -86,23 +86,33 @@ let swiperFeatured = new Swiper('.featured__swiper', {
 //         e.preventDefault(); 
 //     });
 // });
-// Zgjidhni elementët për shigjetat
 // const prevButton = document.querySelector('.swiper-button-prev');
 // const nextButton = document.querySelector('.swiper-button-next');
 
-// // Shtoni event listener për klikun në shigjetën e mbrapa
+
 // prevButton.addEventListener('click', function(event) {
-//     event.preventDefault(); // Parandaloni sjelljen parazgjedhur të klikimit
-//     swiperFeatured.slidePrev(); // Lëvizni swiper-in mbrapa
+//     event.preventDefault(); 
+//     swiperFeatured.slidePrev(); 
 // });
 
-// // Shtoni event listener për klikun në shigjetën përpara
+
 // nextButton.addEventListener('click', function(event) {
-//     event.preventDefault(); // Parandaloni sjelljen parazgjedhur të klikimit
-//     swiperFeatured.slideNext(); // Lëvizni swiper-in përpara
+//     event.preventDefault(); 
+//     swiperFeatured.slideNext(); 
 // });
 
 /*=============== NEW SWIPER ===============*/
+let swiperNew = new Swiper('.new__swiper', {
+    loop: true,
+    spaceBetween: 16,
+    slidesPerView: 'auto',
+
+    breakpoints:{
+        1150:{
+            slidesPerView: 3,
+        },
+    },
+});
 
 
 /*=============== TESTIMONIAL SWIPER ===============*/
