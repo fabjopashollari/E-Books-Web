@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+
+     <!--=============== SWIPER CSS ===============-->
+     <link rel="stylesheet" href="../E-Books-Web/css/swiper-bundle.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="css/style.css">
+
+      <title>E-books</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container bol-container">
+            <a href="#" class="nav__logo">
+                <i class="ri-book-3-line"></i> E-Book
+            </a>
+
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link">
+                            
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#featured" class="nav__link">
+                            <i class="ri-home-line"></i>
+                            <span>Featured</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#discount" class="nav__link">
+                            <i class="ri-price-tag-3-line"></i>
+                            <span>Discount</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#new" class="nav__link">
+                            <i class="ri-bookmark-line"></i>
+                            <span>New Book</span>
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonial" class="nav__link">
+                            <i class="ri-message-3-line"></i>
+                            <span>Testimonial</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="nav_actions">
+                <!-- SEARCH BUTTON -->
+                <i class="ri-search-line search-button" id="search-button"></i>
+
+                <!-- LOGIN BUTTON -->
+                <i class="ri-user-line login-button" id="login-button"></i>
+
+                <!-- THEME BUTTON -->
+                <i class="ri-moon-line change-theme" id="theme-button"></i>
+            </div>
+         </nav>
+      </header>
+      
+      <!--==================== SEARCH ====================-->
+      <div class="search" id="search-content">
+    <form action="" class="search__form">
+       <i class="ri-search-line search__icon"></i>
+       <input type="search" placeholder="What are you looking for" class="search__input">
+    </form>
+    <i class="ri-close-line search__close" id="search-close"></i> 
+      </div>
+      <!--==================== LOGIN ====================-->
+      <div class="login grid" id="login-content">
+         <form action="" class="login__form grid">
+            <h3 class="login_title">Log In</h3>
+
+            <div class="login__group grid">
+                <div>
+                    <label for="login-email" class="login__label">Email</label>
+                    <input type="email" placeholder="Write your emali" class="login__input" name="email" id="login-email">
+                </div>
+                <div>
+                    <label for="login-pass" class="login__label">Password</label>
+                    <input type="password" placeholder="Enter your password" class="login__input" name="pass" id="login-pass">
+                </div>
+            </div>
+            <div>
+                <span class="login__singup">
+                    You do not have an account? <a href="#">Sign up</a>
+                </span>
+
+                <a href="#" class="login__forgot">You forgot your password
+                </a>
+
+                <button type="submit" class="login__button button">Log In</button>
+            </div>
+
+         </form>
+
+         <i class="ri-close-line login__close" id="login-close"></i>
+      </div>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+          <div class="home__container container ">
+            <div class="home__data">
+                <h1 class="home__title">   
+                Browse & <br>
+                Select E-Books
+                </h1>
+                <p class="home__description">
+                    Find the best e-books from your favorite 
+                    writers, explore hundreds of books with all 
+                    possible categories, take advantage of the 
+                    50% discount and much more.
+                </p>
+                <a href="#" class="button">Explore Now</a>
+            </div>
+            <div class="home__images">
+                <div class="home__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="home__article swiper-slide">
+                            <img src="../E-Books-Web/img/home-book-1.png" alt="book" class="home__img ">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="../E-Books-Web/img/home-book-2.png" alt="book" class="home__img">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="../E-Books-Web/img/home-book-3.png" alt="book" class="home__img">
+                        </article>
+                        <article class="home__article swiper-slide">
+                            <img src="../E-Books-Web/img/home-book-4.png" alt="book" class="home__img">
+                        </article>
+                    </div>
+                </div>
+            </div>
+          </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            <div class="services__container container grid">
+               
+                <article class="services__card">
+                    <i class="ri-truck-line"></i>
+                    <h3 class="service__title">Free Shipping</h3>
+                    <p class="services__description">Order More Than $100</p>
+                </article>
+                <article class="services__card">
+                    <i class="ri-lock-2-line"></i>
+                    <h3 class="service__title">Secure Payment</h3>
+                    <p class="services__description">100% Secure Payment</p>
+                </article>
+                <article class="services__card">
+                    <i class="ri-customer-service-2-line"></i>
+                    <h3 class="service__title">24/7 Support</h3>
+                    <p class="services__description">Call us anytime</p>
+                </article>
+            </div>
+         </section>
+
+         <!--==================== FEATURED ====================-->
+         <section class="featured section" id="featured">
+            <h2 class="section__title">
+                Featured Books
+            </h2>
+
+            <div class="featured__container container">
+                <div class="featured__swiper swiper">
+                    <div class="swiper-wrapper">
+                        <article class="featured__card  swiper-slide">
+                            <img src="../E-Books-Web/img/book-1.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-2.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-3.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-4.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-5.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-6.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-7.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-8.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-9.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <article class="featured__card swiper-slide">
+                            <img src="../E-Books-Web/img/book-10.png" alt="book" class="featured__img">
+                            <h2 class="featured__title">Featured Books</h2>
+                            <div class="featured__prices">
+                                <span class="featured__discount">$11.99</span>
+                                <span class="featured__price">$19.99</span>
+                            </div>
+                            <button class="button">Add To Cart</button>
+                            <div class="featured__actions">
+                                <button><i class="ri-search-line"></i></button>
+                                <button><i class="ri-heart-3-line"></i></button>
+                                <button><i class="ri-eye-line"></i></button>
+                            </div>
+                        </article>
+                        <div class="swiper-button-prev">
+                            <i class="ri-arrow-left-s-line"></i>
+                        </div>
+                        <div class="swiper-button-next">
+                            <i class="ri-arrow-right-s-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== DISCOUNT ====================-->
+         <section class="discount section" id="discount">
+            <div class="discount__container container grid">
+                <div class="discount__data">
+                    <h2 class="discount__title section__title">
+                        Up To 50% Discount
+                    </h2>
+                    <p class="discount__description">
+                        Take advantage of the discount days we 
+                        have for you, buy books from your favorite 
+                        writers, the more you buy, the more 
+                        discounts we have for you. 
+                    </p>
+                    <a href="#" class="button">Shop Now</a>
+                </div>
+                <div class="discount__images">
+                    <img src="../E-Books-Web/img/discount-book-1.png" alt="book" class="discount__img-1">
+                    <img src="../E-Books-Web/img/discount-book-2.png" alt="book" class="discount__img-2">
+                </div>
+            </div>
+         </section>
+
+         <!--==================== NEW BOOKS ====================-->
+         <section class="new section" id="new">
+            <h2 class="section__title">
+                New Books
+            </h2>
+            <div class="new__container container">
+                <div class="new__swiper">
+                    <a href="#" class="new__cad"></a>
+                    <img src="../E-Books-Web/img/book-1.png" alt="book" class="new__img">
+                    <div>
+                        <h2 class="new__title">New Book</h2>
+                        
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!--==================== JOIN ====================-->
+         <section class="join section">
+            
+         </section>
+
+         <!--==================== TESTIMONIAL ====================-->
+         <section class="testimonial section" id="testimonial">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+
+      <!--=============== SWIPER JS ===============-->
+      <script src="../E-Books-Web/js/swiper-bundle.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+      <script src="js/index.js"></script>
+   </body>
+</html>
