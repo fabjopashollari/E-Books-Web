@@ -134,11 +134,30 @@ let swiperTestimonial = new Swiper('.testimonial__swiper', {
 
 
 /*=============== SHOW SCROLL UP ===============*/ 
-
+const scrollUp = () => {
+    const scrollUP = document.getElementById('scroll-up')
+    this.scrollY >= 350 ? scrollUP.classList.add('show-scroll')
+                        : scrollUP.classList.remove('show-scroll')
+}
+window.addEventListener('scroll', scrollUp)
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
+const scrollActive = ()=> {
+    const scrollDown = window.scrollY
+    sections.forEach(current => {
+        const sectionHeight = current.offsetHeight,
+        sectionTop = current.offsetTop -58,
+        sectionId = current.getAtribute('id'),
+        sectionsClass = document.querySelector(`.nav__menu a[href*=` + sectionId + `]`)
 
-
+        if(scrollDown > sectionTOp && scrollDown <= sectionTop + sectionHeight) {
+            sectionsClass.classList.add('active-link')
+        }else{
+            sectionsClass.classList.remove('active-link')
+        }
+    })
+}
+window.addEventListener('scroll', scrollActive)
 /*=============== DARK LIGHT THEME ===============*/ 
 
 
