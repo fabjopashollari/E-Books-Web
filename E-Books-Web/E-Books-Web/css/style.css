@@ -53,6 +53,12 @@
     padding: 0;
     margin: 0;
   }
+ 
+    .bol-container{
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 15px;
+     }
   
   html {
     scroll-behavior: smooth;
@@ -379,7 +385,7 @@
   margin: initial;
  }
  .home__container{
-  
+
   padding-top: 2rem;
   row-gap: 2.5rem;
  }
@@ -721,7 +727,13 @@ content: '';
   
   /* /=============== BREAKPOINTS ===============/ */
   /* For small devices */
-   @media screen and (max-widh: 320px){
+  @media  screen and (max-width: 320px) {
+    /* .nav__actions{
+      padding-right: 3rem;
+    } */
+    .change-theme{
+      padding-right: 2rem;
+    }
     .container{
       margin-inline: 1rem;
     }
@@ -744,9 +756,17 @@ content: '';
       row-gap: 2rem;
     }
     }
-  
+  @media  screen and (max-width: 449px) {
+    .change-theme{
+      padding-right: 3rem;
+    }
+    
+  }
   /* For medium devices */
    @media screen and (min-width: 450px) {
+    .change-theme{
+      padding-right: 4rem;
+    }
     .featured__card{
       width: 290px;
     }
@@ -761,6 +781,9 @@ content: '';
     }
   }
   @media screen and (min-width: 576px) {
+    .change-theme{
+      padding-right: 4rem;
+    }
     .nav__list{
       padding-right: 6rem;
     }
@@ -799,11 +822,21 @@ content: '';
     } 
   }
   @media screen and (min-width: 768px){
+    .change-theme{
+      padding-right: 4rem;
+    }
+    /* .home__data{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 15rem;
+      width: 500px;
+    } */
     .home__container{
-      grid-template-columns: 580px;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Korrigjimi i madhësisë për të përshtatur më mirë për tabletin */
     }
     .home__data{
-      width: 420px;
+      width: 100%;
       justify-self: center;
     }
     .services__container{
@@ -818,6 +851,9 @@ content: '';
   }
   /* For large devices */
 @media screen and (min-width: 1150px) {
+  .home__container{
+    display: grid;
+  }
   .section{
     padding-block: 7rem 2rem;
   }
@@ -826,7 +862,7 @@ content: '';
     column-gap: 4rem;
   }
   .nav__link i {
-display: none;
+    display: none;
   }
   .nav__link span{
     display: block;
