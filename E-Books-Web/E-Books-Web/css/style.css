@@ -110,8 +110,32 @@
       Color changes in some parts of 
       the website, in dark theme
   ==========*/
-  
-  
+  .dark_theme .shadow-header{
+    box-shadow: 0 2px 16px hsla(0, 0%, 0%, .4);
+  }
+.dark_theme .nav-menu{
+  box-shadow: 0 -8px 32px hsla(0, 0%, 0%, .4);
+}
+.dark_theme .scrollup{
+
+    box-shadow: 0 2px 8px hsla(0, 0%, 0%, .4);
+}
+.dark_theme .scrollup {
+  box-shadow: 0 2px 8px hsla(0, 0%, 0%, .4);
+}
+.dark_theme .search,
+.dark_theme .login {
+  background-color: hsla(230, 12%, 8%, .6);
+}
+.dark_theme::-webkit-scrollbar{
+  background-color: hsl(230, 16%, 15%);
+}
+.dark_theme::-webkit-scrollbar-thumb{
+  background-color: hsl(230, 16%, 25%);
+}
+.dark_theme::-webkit-scrollbar-thumb:hover{
+  background-color: hsl(230, 16%, 35%);
+}
   /*=============== REUSABLE CSS CLASSES ===============*/
   .container {
     max-width: 1220px;
@@ -182,6 +206,7 @@
   .nav__list{
     display: flex;
     justify-content: space-between;
+    padding-right: 2rem;
   }
 
   .nav__link{
@@ -732,6 +757,9 @@ content: '';
     }
   }
   @media screen and (min-width: 576px) {
+    .nav__list{
+      padding-right: 6rem;
+    }
     .search__form{
       width: 500px;
       margin-inline: auto;
